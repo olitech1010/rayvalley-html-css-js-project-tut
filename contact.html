@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character encoding for proper text display -->
+    <meta charset="UTF-8">
+    <!-- Viewport meta tag for responsive design on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Ray Valley</title>
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Google Fonts - Montserrat font family with multiple weights -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header section containing logo, navigation, and login button -->
+    <header>
+        <!-- Logo container - links back to home page -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="./images/logo.png" alt="Ray Valley Logo" class="h-10 w-10">
+            </a>
+        </div>
+        <!-- Desktop navigation menu - hidden on mobile devices -->
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- Desktop login button - hidden on mobile devices -->
+        <a href="login.html" class="login btn-primary">Login</a>
+        <!-- Hamburger menu icon - visible only on mobile devices (max-width: 750px) -->
+        <img src="./images/humburger.png" alt="Hamburger icon" class="humburger" id="hamburger-icon">
+    </header>
+
+    <!-- Backdrop overlay - darkens background when menu is open -->
+    <div class="mobile-menu-backdrop" id="menu-backdrop"></div>
+
+    <!-- Mobile Menu Overlay - slides in from the right -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <div class="mobile-menu-content">
+            <!-- Close button (X) for the mobile menu -->
+            <button class="mobile-menu-close" id="close-menu" aria-label="Close menu">×</button>
+            
+            <!-- Navigation links in mobile menu -->
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Login button in mobile menu -->
+            <a href="login.html" class="mobile-login btn-primary">Login</a>
+        </div>
+    </div>
+
+    <!-- Contact Page Content -->
+    <section class="contact-page-container">
+        <!-- Hero Section -->
+        <div class="contact-hero">
+            <h1>Get In Touch</h1>
+            <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+        </div>
+
+        <!-- Contact Content Grid -->
+        <div class="contact-content">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>
+                    <strong>Address:</strong><br>
+                    123 Farm Road<br>
+                    Agricultural District<br>
+                    Country, State 12345
+                </p>
+                <p>
+                    <strong>Phone:</strong><br>
+                    +1 (555) 123-4567
+                </p>
+                <p>
+                    <strong>Email:</strong><br>
+                    info@rayvalleyfarms.com
+                </p>
+                <p>
+                    <strong>Business Hours:</strong><br>
+                    Monday - Friday: 9:00 AM - 5:00 PM<br>
+                    Saturday: 10:00 AM - 2:00 PM<br>
+                    Sunday: Closed
+                </p>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+                <h2>Send Us a Message</h2>
+                <!-- Contact Form -->
+                <!-- Forms allow users to submit information to the website -->
+                <form class="contact-form" action="#" method="POST">
+                    <!-- Name Input -->
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="Enter your name" 
+                            required
+                        >
+                    </div>
+                    
+                    <!-- Email Input -->
+                    <div class="form-group">
+                        <label for="contact-email">Your Email</label>
+                        <input 
+                            type="email" 
+                            id="contact-email" 
+                            name="email" 
+                            placeholder="Enter your email" 
+                            required
+                        >
+                    </div>
+                    
+                    <!-- Subject Input -->
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input 
+                            type="text" 
+                            id="subject" 
+                            name="subject" 
+                            placeholder="What is this regarding?" 
+                            required
+                        >
+                    </div>
+                    
+                    <!-- Message Textarea -->
+                    <!-- textarea is used for multi-line text input -->
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            placeholder="Enter your message here..." 
+                            required
+                        ></textarea>
+                    </div>
+                    
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <img src="./images/socials.png" alt="socials" class="footer">
+    </footer>
+    
+    <!-- JavaScript file for hamburger menu functionality -->
+    <script src="./javascript/script.js"></script>
+</body>
+
+</html>
+
+

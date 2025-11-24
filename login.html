@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character encoding for proper text display -->
+    <meta charset="UTF-8">
+    <!-- Viewport meta tag for responsive design on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Ray Valley</title>
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Google Fonts - Montserrat font family with multiple weights -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header section containing logo, navigation, and login button -->
+    <header>
+        <!-- Logo container - links back to home page -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="./images/logo.png" alt="Ray Valley Logo" class="h-10 w-10">
+            </a>
+        </div>
+        <!-- Desktop navigation menu - hidden on mobile devices -->
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- Desktop login button - hidden on mobile devices -->
+        <a href="login.html" class="login btn-primary">Login</a>
+        <!-- Hamburger menu icon - visible only on mobile devices (max-width: 750px) -->
+        <img src="./images/humburger.png" alt="Hamburger icon" class="humburger" id="hamburger-icon">
+    </header>
+
+    <!-- Backdrop overlay - darkens background when menu is open -->
+    <div class="mobile-menu-backdrop" id="menu-backdrop"></div>
+
+    <!-- Mobile Menu Overlay - slides in from the right -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <div class="mobile-menu-content">
+            <!-- Close button (X) for the mobile menu -->
+            <button class="mobile-menu-close" id="close-menu" aria-label="Close menu">×</button>
+            
+            <!-- Navigation links in mobile menu -->
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Login button in mobile menu -->
+            <a href="login.html" class="mobile-login btn-primary">Login</a>
+        </div>
+    </div>
+
+    <!-- Login Page Content -->
+    <section class="login-page-container">
+        <div class="login-form-container">
+            <!-- Page Title -->
+            <h1>Welcome Back</h1>
+            <p>Please login to access your account</p>
+            
+            <!-- Login Form -->
+            <!-- Forms are used to collect user input -->
+            <!-- The action attribute specifies where to send form data when submitted -->
+            <!-- The method attribute specifies the HTTP method (GET or POST) -->
+            <form class="login-form" action="#" method="POST">
+                <!-- Email Input Field -->
+                <!-- Input elements are used to collect different types of user data -->
+                <!-- type="email" provides email validation -->
+                <!-- name attribute is used to identify the field when form is submitted -->
+                <!-- required attribute makes the field mandatory -->
+                <!-- placeholder provides a hint to the user -->
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="Enter your email" 
+                        required
+                    >
+                </div>
+                
+                <!-- Password Input Field -->
+                <!-- type="password" hides the input text for security -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        placeholder="Enter your password" 
+                        required
+                    >
+                </div>
+                
+                <!-- Submit Button -->
+                <!-- type="submit" submits the form when clicked -->
+                <!-- The button uses btn-primary class for consistent styling -->
+                <button type="submit" class="btn-primary">Login</button>
+            </form>
+            
+            <!-- Additional Links -->
+            <p style="margin-top: var(--spacing-md); text-align: center; font-size: var(--font-size-sm);">
+                Don't have an account? <a href="index.html" style="color: var(--color-primary);">Sign up here</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <img src="./images/socials.png" alt="socials" class="footer">
+    </footer>
+    
+    <!-- JavaScript file for hamburger menu functionality -->
+    <script src="./javascript/script.js"></script>
+</body>
+
+</html>
+
+

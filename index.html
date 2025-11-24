@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character encoding for proper text display -->
+    <meta charset="UTF-8">
+    <!-- Viewport meta tag for responsive design on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ray Valley</title>
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Google Fonts - Montserrat font family with multiple weights -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Header section containing logo, navigation, and login button -->
+    <header>
+        <!-- Logo container -->
+        <div class="logo" >
+            <img src="./images/logo.png" alt="Ray Valley Logo" class="h-10 w-10">
+        </div>
+        <!-- Desktop navigation menu - hidden on mobile devices -->
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- Desktop login button - hidden on mobile devices -->
+        <a href="login.html" class="login btn-primary">Login</a>
+        <!-- Hamburger menu icon - visible only on mobile devices (max-width: 750px) -->
+        <!-- This icon triggers the mobile menu to slide in from the right -->
+        <img src="./images/humburger.png" alt="Hamburger icon" class="humburger" id="hamburger-icon">
+    </header>
+
+    <!-- Backdrop overlay - darkens background when menu is open -->
+    <div class="mobile-menu-backdrop" id="menu-backdrop"></div>
+
+    <!-- Mobile Menu Overlay - slides in from the right -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <div class="mobile-menu-content">
+            <!-- Close button (X) for the mobile menu -->
+            <button class="mobile-menu-close" id="close-menu" aria-label="Close menu">×</button>
+            
+            <!-- Navigation links in mobile menu -->
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Login button in mobile menu -->
+            <a href="login.html" class="mobile-login btn-primary">Login</a>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Empowering Farmers <br> with Technology🍀</h1>
+
+            <p>We help realize your dreams of investing in Agriculture,<br> let's start with small things that can
+                change the world,<br>so we live healthy and abundant lives.</p>
+
+            <p>
+                "Sed ut perspiciatis unde omnis iste natus error sit <br>
+                voluptatem accusantium doloremque
+            </p>
+
+            <div class="hero-content-btn">
+                <button class="btn-primary">Join Now</button>
+                <button class="btn-secondary">See how it works→</button>
+            </div>
+        </div>
+        <img class='hero-image' src="./images/corn-isolated 1.png" alt="">
+    </section>
+
+
+
+    <div class="hero-content">
+        <h2>Steps to Start your Farm off Right</h2>
+        <p2>Follow the instructions for more</p2>
+    </div>
+
+    <section>
+        <div class="steps-image">
+            <img src="./images/gp5.png" alt="steps">
+        </div>
+
+        <div class="steps">
+            <div class="steps-content">
+                <h2>Innoculate</h2>
+                <p>"Sed ut perspiciatis unde<br>
+                    omnis iste natus error sit voluptatem<br>
+                    accusantium doloremque </p>
+            </div>
+            <div class="steps-content">
+                <h2>Sow the seeds</h2>
+                <p>"Sed ut perspiciatis unde<br>
+                    omnis iste natus error sit voluptatem<br>
+                    accusantium doloremque </p>
+            </div>
+            <div class="steps-content">
+                <h2>Prune your farm</h2>
+                <p>"Sed ut perspiciatis unde<br>
+                    omnis iste natus error sit voluptatem<br>
+                    accusantium doloremque </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="money">
+        <img class="mny" src="./images/gp6.png" alt="money">
+
+
+        <div class="money-content">
+            <h2>Make Your Green</h2>
+            <p>"Sed ut perspiciatis unde omnis iste natus error sit<br>
+                voluptatem accusantium doloremque laudantium,<br>
+                totam rem aperiam, eaque ipsa quae ab illo inventore<br>
+                veritatis et quasi architecto beatae vitae dicta sunt<br>
+                explicabo."</p>
+
+            <button class="btn-primary">▶ Watch Now</button>
+        </div>
+
+    </section>
+
+    <section class="livestock">
+        <div class="livestock-content">
+            <h2>Livestock Farming</h2>
+            <p>"Sed ut perspiciatis unde omnis iste natus error sit<br>
+                voluptatem accusantium doloremque laudantium,<br>
+                totam rem aperiam, eaque ipsa quae ab illo inventore<br>
+                veritatis et quasi architecto beatae vitae dicta sunt<br>
+                explicabo."</p>
+            <div class="lvbtn">
+                <button class="btn-primary">▶ See Catalogue</button>
+                <button class="btn-secondary">See how it works→</button>
+            </div>
+        </div>
+        <div>
+            <img class="lvimg" src="./images/gp8.png" alt="poultry" width="400" , height="350">
+        </div>
+    </section>
+
+    <section class="money">
+        <div>
+            <img class="crop-img" src="./images/gp9.png" alt="crop" width="400" , height="400">
+        </div>
+        <div class="money-content">
+            <h1>Cash Cropping</h1>
+            <p>"Sed ut perspiciatis unde omnis iste natus error sit<br>
+                voluptatem accusantium doloremque laudantium,<br>
+                totam rem aperiam, eaque ipsa quae ab illo inventore<br>
+                veritatis et quasi architecto beatae vitae dicta sunt<br>
+                explicabo."</p>
+
+            <button class="btn-primary">Farm Order</button>
+        </div>
+    </section>
+
+    <section class="bottom-hero">
+        <div class="bottom-hero-content">
+            <h2>What we are doing<br> at Ray Valley Farms?</h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit<br>
+                voluptatem accusantium doloremque laudantium,<br>
+                totam rem aperiam, eaque ipsa quae ab illo inventore<br>
+                veritatis et quasi architecto beatae vitae dicta sunt<br>
+                explicabo</p>
+
+            <button class="btn-primary">Join Now</button>
+        </div>
+        <div>
+            <img class="fm" src="./images/man.png" alt="">
+        </div>
+
+    </section>
+    <footer>
+        <img src="./images/socials.png" alt="socials" class="footer">
+    </footer>
+    
+    <!-- JavaScript file for hamburger menu functionality -->
+    <!-- Placed at end of body for better performance - ensures HTML loads first -->
+    <script src="./javascript/script.js"></script>
+</body>
+
+</html>

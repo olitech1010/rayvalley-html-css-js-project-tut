@@ -1,4 +1,4 @@
-# Ray Valley Farms - Beginner Web Development Tutorial
+# RAMSYS -  Web Development Tutorial
 
 ## 📚 Table of Contents
 1. [Introduction](#introduction)
@@ -16,7 +16,10 @@
 
 ## Introduction
 
-Welcome to the Ray Valley Farms web development tutorial! This project is designed to teach beginners the fundamentals of HTML, CSS, and JavaScript through a real-world website example.
+Welcome to the RAMSYS web development tutorial! This project is designed to teach beginners/intermediate devs the fundamentals of HTML, CSS, and JavaScript through a real-world website example.
+
+### Instructor - Clement Olives Mensah
+https://www.linkedin.com/in/olitech1010
 
 ### What You'll Learn
 - **HTML**: Structure and semantic markup
@@ -1108,14 +1111,14 @@ The footer is now a comprehensive section with:
 
 Congratulations! You've learned the fundamentals of web development through this project. You now understand:
 
-✅ HTML structure and semantic markup
-✅ CSS styling, layout, and responsive design
-✅ JavaScript for interactivity
-✅ Best practices and code organization
+HTML structure and semantic markup
+CSS styling, layout, and responsive design
+JavaScript for interactivity
+Best practices and code organization
 
 Keep practicing, building projects, and learning. Web development is a journey, and you're on the right path!
 
-**Happy Coding! 🚀**
+**Happy Coding!**
 
 ---
 
@@ -1131,11 +1134,11 @@ This project is for educational purposes. Feel free to use it as a learning reso
 
 ## Contact Information
 
-**Ray Valley Farms**
+**Olives Technologies**
 - **Address**: Accra, Ghana
 - **Phone**: +233 55 330 6360
 - **Email**: olitech1010@gmail.com
 - **Google Maps**: [View Location](https://maps.app.goo.gl/sq2QHscmQ1UMpQG5A)
 - **Reviews**: [Leave a Review](https://share.google/HuDOOyPcgZzexN2P4)
 
----
+BY CLEMENT OLIVES

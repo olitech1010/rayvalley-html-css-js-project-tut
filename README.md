@@ -1,5 +1,7 @@
 # RAMSYS -  Web Development Tutorial
 
+View the live project here: https://olitech1010.github.io/rayvalley-html-css-js-project-tut/
+
 ## 📚 Table of Contents
 1. [Introduction](#introduction)
 2. [Project Overview](#project-overview)

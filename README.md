@@ -16,7 +16,7 @@
 
 ## Introduction
 
-Welcome to the Olives Technologies web development tutorial! This project is designed to teach beginners the fundamentals of HTML, CSS, and JavaScript through a real-world website example.
+Welcome to the Ray Valley Farms web development tutorial! This project is designed to teach beginners the fundamentals of HTML, CSS, and JavaScript through a real-world website example.
 
 ### What You'll Learn
 - **HTML**: Structure and semantic markup
@@ -35,10 +35,13 @@ Welcome to the Olives Technologies web development tutorial! This project is des
 ## Project Overview
 
 Ray Valley Farms is a modern, responsive website for an agricultural business. The project includes:
-- **4 HTML Pages**: Home, About, Login, and Contact
+- **6 HTML Pages**: Home, About, Gallery, Login, Signup, and Contact
 - **Responsive Design**: Works on desktop, tablet, and mobile devices
 - **Interactive Menu**: Hamburger menu for mobile navigation
 - **Modern Styling**: Clean, professional design with CSS variables
+- **Image Gallery**: Learn CSS Grid with a beautiful image gallery
+- **Google Maps Integration**: Embedded maps for location display
+- **Form Handling**: Login and signup forms with validation
 
 ### Technologies Used
 - HTML5 (Structure)
@@ -685,22 +688,28 @@ h1 {
 ray-valley-main/
 │
 ├── index.html          # Home page
-├── about.html          # About page with video
-├── login.html          # Login page
-├── contact.html        # Contact page
+├── about.html          # About page with video and images
+├── gallery.html       # Image gallery page (CSS Grid)
+├── login.html         # Login page
+├── signup.html        # Sign up page
+├── contact.html       # Contact page with Google Maps
 │
 ├── css/
-│   └── style.css       # All styles (variables, layout, responsive)
+│   └── style.css      # All styles (variables, layout, responsive)
 │
 ├── javascript/
-│   └── script.js       # Mobile menu functionality
+│   └── script.js      # Mobile menu functionality
 │
 ├── images/
 │   ├── logo.png
 │   ├── bg.png
-│   └── ... (other images)
+│   ├── Aerial_view_of_farm.jpeg
+│   ├── Agricultural_machinery.jpg
+│   ├── cattle farm.jpg
+│   ├── farmer at farm.jpg
+│   └── ... (many more images)
 │
-└── README.md           # This file
+└── README.md          # This file
 ```
 
 ### File Organization
@@ -709,11 +718,13 @@ ray-valley-main/
 - Each page has its own HTML file
 - All pages share the same header and footer structure
 - Consistent navigation across all pages
+- Footer includes: About, Quick Links, Contact Info, and Social Media
 
 **CSS File**
 - All styles in one file for simplicity
 - Organized by sections with comments
 - CSS variables at the top
+- Responsive design with mobile-first approach
 
 **JavaScript File**
 - Separate file for better organization
@@ -782,6 +793,80 @@ Designing for mobile, then enhancing for desktop:
 - Better user experience
 - Easier maintenance
 
+### 6. CSS Grid (Gallery Page)
+Modern layout system for two-dimensional layouts:
+```css
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+```
+
+**Benefits:**
+- Easy to create responsive grids
+- Automatic layout adjustment
+- Perfect for image galleries
+
+### 7. Google Maps Integration
+Embedding interactive maps using iframes:
+```html
+<iframe src="https://www.google.com/maps/embed?..." 
+        width="100%" 
+        height="450">
+</iframe>
+```
+
+**Benefits:**
+- Interactive location display
+- Easy navigation for users
+- Professional appearance
+
+### 8. Form Validation
+HTML5 form validation attributes:
+```html
+<input type="email" required minlength="8">
+```
+
+**Benefits:**
+- Built-in browser validation
+- Better user experience
+- Prevents invalid submissions
+
+### 9. Footer Design
+The footer uses CSS Grid for a responsive multi-column layout:
+```css
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+```
+
+**Footer Sections:**
+- About: Company description
+- Quick Links: Navigation links
+- Contact: Contact information
+- Social Media: Social icons and follow text
+
+**Benefits:**
+- Organized information
+- Easy navigation
+- Professional appearance
+- Responsive grid layout
+
+### 10. Content Overflow Prevention
+Using proper CSS properties to prevent text overflow:
+```css
+word-wrap: break-word;
+max-width: 100%;
+box-sizing: border-box;
+```
+
+**Benefits:**
+- Prevents text from breaking layout
+- Better mobile experience
+- Content stays within containers
+
 ---
 
 ## Practice Exercises
@@ -807,6 +892,11 @@ Designing for mobile, then enhancing for desktop:
    - Copy `about.html`
    - Create `services.html`
    - Update navigation links
+
+5. **Explore the Gallery Page**
+   - Open `gallery.html`
+   - See how CSS Grid creates responsive image layouts
+   - Try adding more images to the gallery
 
 ### Intermediate Exercises
 
@@ -852,6 +942,11 @@ Designing for mobile, then enhancing for desktop:
    - Minify CSS/JS
    - Add lazy loading
 
+5. **Enhance the Gallery**
+   - Add lightbox functionality (click image to view larger)
+   - Add image filtering (filter by category)
+   - Add image captions with animations
+
 ---
 
 ## Resources
@@ -895,6 +990,65 @@ Designing for mobile, then enhancing for desktop:
 
 ---
 
+## New Features Explained
+
+### Gallery Page (gallery.html)
+The gallery page demonstrates CSS Grid, a powerful layout system for creating responsive image galleries.
+
+**Key Concepts:**
+- **CSS Grid**: Two-dimensional layout system
+- **auto-fit**: Automatically adjusts number of columns
+- **minmax()**: Sets minimum and maximum column widths
+- **Hover Effects**: Interactive image scaling on hover
+
+**How It Works:**
+```css
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+```
+This creates a responsive grid that automatically adjusts based on screen size.
+
+### Signup Page (signup.html)
+A complete registration form demonstrating:
+- Multiple input types (text, email, tel, password)
+- Form validation (required, minlength)
+- Checkbox for terms and conditions
+- Password confirmation field
+
+### Google Maps Integration
+The contact page includes an embedded Google Map showing the business location in Accra, Ghana.
+
+**How to Embed Maps:**
+1. Get the Google Maps share link
+2. Convert to embed format
+3. Use iframe to display the map
+
+### Mobile Centering
+All content is centered on mobile devices for better readability:
+- Text alignment: center
+- Images: auto margins
+- Buttons: centered with flexbox
+- Forms: centered inputs
+
+### Footer Implementation
+The footer is now a comprehensive section with:
+- **Grid Layout**: Responsive 4-column layout (stacks on mobile)
+- **Social Icons**: Integrated social media icons
+- **Contact Information**: Quick access to contact details
+- **Quick Links**: Easy navigation to all pages
+- **Copyright**: Footer bottom with copyright notice
+
+**Applied to All Pages:**
+- index.html
+- about.html
+- gallery.html
+- contact.html
+- login.html
+- signup.html
+
 ## Common Questions
 
 ### Q: Why do we use CSS variables?
@@ -915,6 +1069,25 @@ Designing for mobile, then enhancing for desktop:
 
 ### Q: How do media queries work?
 **A:** Media queries apply different styles based on screen size. They let you create responsive designs that work on all devices.
+
+### Q: What's the difference between Flexbox and Grid?
+**A:**
+- **Flexbox**: One-dimensional layout (row OR column)
+- **Grid**: Two-dimensional layout (rows AND columns)
+- Use Flexbox for components, Grid for page layouts
+
+### Q: How do I embed Google Maps?
+**A:** 
+1. Get the share link from Google Maps
+2. Convert it to embed format
+3. Use an iframe element with the embed URL
+4. Set width and height attributes
+
+### Q: How does the footer work?
+**A:** The footer uses CSS Grid to create a responsive layout. On desktop, it shows 4 columns. On mobile, it stacks vertically. The footer includes company info, links, contact details, and social media icons.
+
+### Q: How do I prevent text overflow?
+**A:** Use CSS properties like `word-wrap: break-word`, `max-width: 100%`, and `box-sizing: border-box` to ensure content stays within its container and doesn't break the layout.
 
 ---
 
@@ -954,4 +1127,15 @@ This project is for educational purposes. Feel free to use it as a learning reso
 
 *Last Updated: 2025*
 
+---
 
+## Contact Information
+
+**Ray Valley Farms**
+- **Address**: Accra, Ghana
+- **Phone**: +233 55 330 6360
+- **Email**: olitech1010@gmail.com
+- **Google Maps**: [View Location](https://maps.app.goo.gl/sq2QHscmQ1UMpQG5A)
+- **Reviews**: [Leave a Review](https://share.google/HuDOOyPcgZzexN2P4)
+
+---

@@ -28,6 +28,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
@@ -51,6 +52,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
@@ -75,23 +77,27 @@
                 <h2>Contact Information</h2>
                 <p>
                     <strong>Address:</strong><br>
-                    123 Farm Road<br>
-                    Agricultural District<br>
-                    Country, State 12345
+                    Accra, Ghana
                 </p>
                 <p>
                     <strong>Phone:</strong><br>
-                    +1 (555) 123-4567
+                    <a href="tel:+233553306360" style="color: var(--color-primary); text-decoration: none;">+233 55 330 6360</a>
                 </p>
                 <p>
                     <strong>Email:</strong><br>
-                    info@rayvalleyfarms.com
+                    <a href="mailto:olitech1010@gmail.com" style="color: var(--color-primary); text-decoration: none;">olitech1010@gmail.com</a>
                 </p>
                 <p>
                     <strong>Business Hours:</strong><br>
                     Monday - Friday: 9:00 AM - 5:00 PM<br>
                     Saturday: 10:00 AM - 2:00 PM<br>
                     Sunday: Closed
+                </p>
+                <!-- Google Business Profile Link for Reviews -->
+                <p style="margin-top: var(--spacing-md);">
+                    <a href="https://share.google/HuDOOyPcgZzexN2P4" target="_blank" class="btn-primary" style="display: inline-block; text-decoration: none;">
+                        Leave Us a Review
+                    </a>
                 </p>
             </div>
 
@@ -108,7 +114,7 @@
                             type="text" 
                             id="name" 
                             name="name" 
-                            placeholder="Enter your name" 
+                            placeholder="John Doe" 
                             required
                         >
                     </div>
@@ -120,7 +126,7 @@
                             type="email" 
                             id="contact-email" 
                             name="email" 
-                            placeholder="Enter your email" 
+                            placeholder="john.doe@example.com" 
                             required
                         >
                     </div>
@@ -132,7 +138,7 @@
                             type="text" 
                             id="subject" 
                             name="subject" 
-                            placeholder="What is this regarding?" 
+                            placeholder="Inquiry about farming services" 
                             required
                         >
                     </div>
@@ -144,7 +150,7 @@
                         <textarea 
                             id="message" 
                             name="message" 
-                            placeholder="Enter your message here..." 
+                            placeholder="I would like to learn more about your farming services and how you can help me start my agricultural journey..." 
                             required
                         ></textarea>
                     </div>
@@ -154,11 +160,74 @@
                 </form>
             </div>
         </div>
+
+        <!-- Google Maps Section -->
+        <div class="map-section">
+            <h2>Find Us on the Map</h2>
+            <p>Visit our location in Accra, Ghana</p>
+            <!-- Google Maps Embed -->
+            <!-- iframe is used to embed Google Maps -->
+            <!-- The src contains the Google Maps embed URL -->
+            <!-- We use the Google Maps share link converted to embed format -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.755!2d-0.1917!3d5.6037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMzYnMTMuMyJOIDDCsDExJzMwLjEiVw!5e0!3m2!1sen!2sgh!4v1234567890123!5m2!1sen!2sgh"
+                width="100%" 
+                height="450" 
+                style="border:0; border-radius: var(--radius-sm);" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Ray Valley Farms Location - Accra, Ghana">
+            </iframe>
+            <!-- Alternative: Direct link to Google Maps -->
+            <p style="margin-top: var(--spacing-md); text-align: center;">
+                <a href="https://maps.app.goo.gl/sq2QHscmQ1UMpQG5A" target="_blank" class="btn-secondary" style="display: inline-block; text-decoration: none;">
+                    Open in Google Maps
+                </a>
+            </p>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <img src="./images/socials.png" alt="socials" class="footer">
+        <div class="footer-container">
+            <!-- About Section -->
+            <div class="footer-section">
+                <h3>About Ray Valley Farms</h3>
+                <p>Empowering farmers with technology and sustainable farming practices. We help realize your dreams of investing in Agriculture.</p>
+            </div>
+            
+            <!-- Quick Links Section -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            
+            <!-- Contact Section -->
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Accra, Ghana</p>
+                <a href="tel:+233553306360">+233 55 330 6360</a>
+                <a href="mailto:olitech1010@gmail.com">olitech1010@gmail.com</a>
+            </div>
+            
+            <!-- Social Media Section -->
+            <div class="footer-section footer-social">
+                <h3>Follow Us</h3>
+                <div class="footer-social-icons">
+                    <img src="./images/socials.png" alt="Social media icons" class="footer">
+                </div>
+                <p>Connect with us on social media for updates and farming tips.</p>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Ray Valley Farms. All rights reserved.</p>
+        </div>
     </footer>
     
     <!-- JavaScript file for hamburger menu functionality -->
